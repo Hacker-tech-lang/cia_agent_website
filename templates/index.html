@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIA Agent Portal</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Agent</h1>
+        <p>This is the official portal for CIA agents. Your mission details will be delivered securely.</p>
+
+        <!-- Button that triggers a JavaScript function -->
+        <button id="mission-btn">Get Mission</button>
+
+        <!-- Area to display the mission -->
+        <p id="mission"></p>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
